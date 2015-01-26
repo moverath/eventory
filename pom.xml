@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.java.cocktails</groupId>
+    <artifactId>eventory-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Eventory</name>
+
+    <modules>
+        <module>eventory-core</module>
+        <module>eventory-client</module>
+        <module>eventory-resources</module>
+    </modules>
+
+    <scm>
+        <developerConnection>scm:git@github.com/moverath/eventory.git</developerConnection>
+        <connection>scm:git@github.com/moverath/eventory.git</connection>
+        <url>https://github.com/moverath/eventory.git</url>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/moverath/eventory/issues</url>
+        <system>github</system>
+    </issueManagement>
+
+    <properties>
+        <eventory.parent.basedir>${basedir}</eventory.parent.basedir>
+        <filters.path>${eventory.parent.basedir}/src/main/filters/</filters.path>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+
+</project>
