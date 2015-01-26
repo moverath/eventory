@@ -1,0 +1,145 @@
+############ BUGS BUGS BUGS #####################
+
+
+#################################################
+
+############### NEW FEATURES ####################
+TEMPLATE FIRST
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename:
+Datum:
+Bemerkung:
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Vorstellung Frank Grundlegendes Konzept
+Datum: 08.08.2014
+Bemerkung: Siehe TODO Liste ;)
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Feedback Textfeld statt Logo für Veranstaltung
+Datum: 09.08.2014
+Bemerkung: Logo entfällt weil nicht wichtig
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Item --> Artikelnummer ABCD 12345 55-55 (Erstellen Fenster anpassen)
+Datum: 09.08.2014
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename:Suche nach Artikelnummer in itemframes
+Datum:12.08.2014
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Equipment / Ware Filter
+Datum: 16.08.2014
+Bemerkung:
+Artikelnummer - OK
+Name - OK
+Vorratsmenge größer kleiner X - OK -> Abfrage ob größer bzw kleiner
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Set's sollen einen Preis haben
+Datum: 16.08.2014
+Bemerkung:
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Detailansicht Itemset
+Datum: 22.08.2014
+Bemerkung:
+--> Entfernen von einträgen / Items OK
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Detailansicht Kategorie
+Datum: 22.08.2014
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Kategorie nach Namen Filtern
+Datum: 22.08.2014
+Bemerkung:
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename: Packete Filtern und Preis anzeigen
+Datum: 22.08.2014
+Bemerkung:
+Kategorie OK
+Name OK
+Preis von bis OK
++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Featurename:
+Datum:
+Bemerkung:
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#################################################
+
+############ TODO TODO TODO #####################        
+
+Allgemeine TODO's
+
+Detailansicht Veranstaltung
+--> Entfernen von einträgen
+
+Entfernen einer Kategorie
+--> Kategorie als "deleted" markieren" falls irgendwo verwendet
+
+Entfernen von Ware / Equipment
+--> Als deleted markieren falls irgendwo verwendet ansonsten löschen
+
+Entfernen von Veranstaltungen
+--> Als deleted markieren falls irgendwo verwendet ansonsten löschen
+
+Entfernen von Itemsets
+--> Als deleted markieren falls irgendwo verwendet ansonsten löschen
+
+Filter VA
+Name der Veranstaltung
+Ort --> bspw. Hamburg
+Monat
+Datum
+Gaeste von - bis
+
+Lupe für Tabellen
+
+Für ein ItemSet / Packet muss es möglich sein mehrere Bilder zu hinterlegen
+
+Die Menge der Waren / Equipment darf nicht ohne "BELEG" / Vorgangsnummer geändert werden. Ansonsten sind die Änderungen nichtmehr nachvollziehbar
+
+Warenrückgang extra spalte in der Veranstaltung
+Einzelne spalten editierbar machen
+
+Neuer Wareneingang damit Frank nicht rechnen muss ;)
+KEINE BUCHUNG OHNE BELEG
+Durchschnittspreis der ware ermitteln bei neuem hinzufügen
+50 zu 12€ --> Wareneingang --> 100 zu 9,50€ --> Mittelwert wird errechnet
+
+JTextarea linebreak soll mitgespeichert werden... http://www.coderanch.com/t/345884/GUI/java/Jtextarea-read-line-line
+
+Kategorie für Ware (Spirituosen / Softgetränke / Tische) --> Später für das sortieren der Ware bei der Abnahme hilfreich
+Für das entnehmen der Ware aus dem Lager wird ein button zur entnahmebestätigung / validierung angeboten
+
+#################################################
+
+############## ZUKUNFT ZUKUNFT ##################
+
+Kopieren von alten Veranstaltung mit Anpassung an neue Personenzahl (Umrechnung etc)
+
+Feedback nach abgeschlossener Veranstaltung
+Angebotserstellung für die Zukunft
+
+
+#################################################
+
+SEHR WEITE ZUKUNFT
+Android app für feedback
+Mehrere Lager verwalten
