@@ -5,7 +5,8 @@ import java.util.logging.LogManager;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
-import com.sun.istack.logging.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import de.overath.cocktailsundco.inventarverwaltung.controller.CheckPendingEventsController;
 import de.overath.cocktailsundco.inventarverwaltung.controller.ConnectionController;
@@ -14,6 +15,8 @@ import de.overath.cocktailsundco.inventarverwaltung.view.frame.Inventarverwaltun
 
 public class InventarverwaltungActivator
 {
+	private static Log logger = LogFactory.getLog(InventarverwaltungActivator.class);
+
     public static void main(String[] args) {
 	
 	try {
@@ -59,8 +62,7 @@ public class InventarverwaltungActivator
 	}
 	catch(Exception ex)
 	{
-	    Logger logger = Logger.getLogger(InventarverwaltungActivator.class);
-	    logger.severe("Fehler bei der Ausführung", ex);
+	    logger.error("Fehler bei der AusfÃ¼hrung", ex);
 	}
 	
 	
