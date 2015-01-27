@@ -3,14 +3,15 @@ package de.overath.cocktailsundco.inventarverwaltung.view.listener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import com.sun.istack.logging.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import de.overath.cocktailsundco.inventarverwaltung.view.frame.InventarverwaltungMainFrame;
 
 public class ShowItemListener implements ActionListener
 {
 
-    private final Logger log = Logger.getLogger(ShowItemListener.class);
+    private static Log logger = LogFactory.getLog(ShowItemListener.class);
     private InventarverwaltungMainFrame inventarverwaltungMainFrame;
 
     public ShowItemListener(InventarverwaltungMainFrame inventarverwaltungMainFrame)

@@ -15,7 +15,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JTabbedPane;
 
-import com.sun.istack.logging.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import de.overath.cocktailsundco.inventarverwaltung.model.Veranstaltung;
 import de.overath.cocktailsundco.inventarverwaltung.view.listener.PendingEventListener;
@@ -29,14 +30,14 @@ import de.overath.cocktailsundco.inventarverwaltung.view.panel.Verbrauchsartikel
 
 public class InventarverwaltungMainFrame extends JFrame implements IInventarverwaltungFrame, PendingEventListener
 {
+	private static Log logger = LogFactory.getLog(InventarverwaltungMainFrame.class);
+
     private static final String HOME = "Home";
     private static final String KATEGORIEN = "Kategorien";
     private static final String VERANSTALTUNG = "Veranstaltungen";
     private static final String ITEMSET = "Packete / Sets";
     private static final String EQUIPMENT= "Equipment";
     private static final String WARE = "Ware";
-    
-    Logger logger = Logger.getLogger(InventarverwaltungMainFrame.class);
     
     private static final Dimension DEFAULTSIZE = new Dimension(900, 470);
     private static final Dimension MINIMUMSIZE = new Dimension(900, 470);
@@ -84,7 +85,7 @@ public class InventarverwaltungMainFrame extends JFrame implements IInventarverw
     }
     
     public void init(String name) {
-	logger.finest("Inventarverwaltung#init()");
+	logger.info("Inventarverwaltung#init()");
 	setTitle(name);
 	
 	ImageIcon img = new ImageIcon(INVENTARVERWALTUNG_LOGO);

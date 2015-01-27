@@ -19,7 +19,8 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
+
 import de.overath.cocktailsundco.inventarverwaltung.model.ItemSet;
 import de.overath.cocktailsundco.inventarverwaltung.view.listener.ISearchForItemset;
 import de.overath.cocktailsundco.inventarverwaltung.view.model.FilterItemSetTableModel;
@@ -27,7 +28,7 @@ import de.overath.cocktailsundco.inventarverwaltung.view.model.FilterItemSetTabl
 public class AddItemsetFrame extends JFrame implements IInventarverwaltungFrame, ActionListener
 {
 
-    private static final String TITLE_TEXT = "Equipment hinzufügen";
+    private static final String TITLE_TEXT = "Equipment hinzufï¿½gen";
     private static final Dimension DEFAULT_SIZE = new Dimension(300,300);
     private static final Dimension MINIMUM_SIZE = new Dimension(300,300);
     private JFrame createItemsetFrame;

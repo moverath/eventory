@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
-import com.sun.istack.NotNull;
+import javax.validation.constraints.NotNull;
 
 /**
  * Entity implementation class for Entity: Inventar

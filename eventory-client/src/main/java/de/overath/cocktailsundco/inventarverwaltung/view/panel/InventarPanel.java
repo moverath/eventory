@@ -20,7 +20,8 @@ import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.text.NumberFormatter;
 
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
+
 import de.overath.cocktailsundco.inventarverwaltung.controller.LoadDataController;
 import de.overath.cocktailsundco.inventarverwaltung.view.filter.InventarTableFilter;
 import de.overath.cocktailsundco.inventarverwaltung.view.frame.IInventarverwaltungFrame;

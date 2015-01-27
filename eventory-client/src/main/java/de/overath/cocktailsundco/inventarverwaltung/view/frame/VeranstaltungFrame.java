@@ -1,10 +1,17 @@
 package de.overath.cocktailsundco.inventarverwaltung.view.frame;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.Toolkit;
+import com.toedter.calendar.JDateChooser;
+import de.overath.cocktailsundco.inventarverwaltung.controller.PersistenceController;
+import de.overath.cocktailsundco.inventarverwaltung.model.*;
+import de.overath.cocktailsundco.inventarverwaltung.view.listener.*;
+import de.overath.cocktailsundco.inventarverwaltung.view.model.ItemTableModel;
+import de.overath.cocktailsundco.inventarverwaltung.view.model.VeranstaltungHasItemSetTableModel;
+
+import info.clearthought.layout.TableLayout;
+
+import javax.swing.*;
+import javax.swing.border.LineBorder;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -12,40 +19,6 @@ import java.awt.event.WindowEvent;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
-import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.ListSelectionModel;
-import javax.swing.border.LineBorder;
-
-import layout.TableLayout;
-
-import com.toedter.calendar.JDateChooser;
-
-import de.overath.cocktailsundco.inventarverwaltung.controller.PersistenceController;
-import de.overath.cocktailsundco.inventarverwaltung.model.Item;
-import de.overath.cocktailsundco.inventarverwaltung.model.ItemSet;
-import de.overath.cocktailsundco.inventarverwaltung.model.ItemSetHasItem;
-import de.overath.cocktailsundco.inventarverwaltung.model.Veranstaltung;
-import de.overath.cocktailsundco.inventarverwaltung.model.VeranstaltungHasItem;
-import de.overath.cocktailsundco.inventarverwaltung.model.VeranstaltungHasItemSet;
-import de.overath.cocktailsundco.inventarverwaltung.view.listener.AddItemListener;
-import de.overath.cocktailsundco.inventarverwaltung.view.listener.AddItemsetListener;
-import de.overath.cocktailsundco.inventarverwaltung.view.listener.ISearchForItem;
-import de.overath.cocktailsundco.inventarverwaltung.view.listener.ISearchForItemset;
-import de.overath.cocktailsundco.inventarverwaltung.view.listener.PrintVeranstaltungListener;
-import de.overath.cocktailsundco.inventarverwaltung.view.listener.RemoveItemListener;
-import de.overath.cocktailsundco.inventarverwaltung.view.listener.RemoveItemsetListener;
-import de.overath.cocktailsundco.inventarverwaltung.view.model.ItemTableModel;
-import de.overath.cocktailsundco.inventarverwaltung.view.model.VeranstaltungHasItemSetTableModel;
 
 public class VeranstaltungFrame extends JFrame implements IInventarverwaltungFrame, ActionListener, ISearchForItem, ISearchForItemset
 {
@@ -62,14 +35,14 @@ public class VeranstaltungFrame extends JFrame implements IInventarverwaltungFra
     private static final Dimension DEFAULT_SIZE = new Dimension(800, 600);
     private static final Dimension MINIMUM_SIZE = new Dimension(800, 400);
     private static final String LABEL_NAME_STRING = "Name:";
-    private static final String LABEL_GAESTE_ANZAHL_STRING = "Anzahl Gäste:";
+    private static final String LABEL_GAESTE_ANZAHL_STRING = "Anzahl Gï¿½ste:";
     private static final String LABEL_BEGIN_STRING = "Beginn:";
     private static final String LABEL_END_STRING = "Ende:";
     private static final String LABEL_BESCHREIBUNG_STRING = "Beschreibung";
     private static final String DATEI_AUSWAEHLEN = "Logo laden..";
-    private static final String ADD_ITEMSET_STRING = "Equipmentset hinzufügen";
+    private static final String ADD_ITEMSET_STRING = "Equipmentset hinzufï¿½gen";
     private static final String REMOVE_ITEMSET_STRING = "Equipmentset entfernen";
-    private static final String ADD_ITEM_STRING = "Item hinzufügen";
+    private static final String ADD_ITEM_STRING = "Item hinzufï¿½gen";
     private static final String REMOVE_ITEM_STRING = "Item entfernen";
     private static final String LABEL_FEEDBACK_STRING = "Feedback";
     private InventarverwaltungMainFrame inventarverwaltungMainFrame;
@@ -359,7 +332,7 @@ public class VeranstaltungFrame extends JFrame implements IInventarverwaltungFra
 	    descriptionTextArea = new JTextArea();
 	    descriptionTextArea.setLineWrap(true);
 	    descriptionTextArea.setBorder(new LineBorder(Color.black));
-	    descriptionTextArea.setToolTipText("Beschreibung für die neue Veranstaltung");
+	    descriptionTextArea.setToolTipText("Beschreibung fï¿½r die neue Veranstaltung");
 	}
 	return descriptionTextArea;
     }

@@ -10,7 +10,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
+
 import de.overath.cocktailsundco.inventarverwaltung.view.frame.IInventarverwaltungFrame;
 import de.overath.cocktailsundco.inventarverwaltung.view.frame.InventarverwaltungMainFrame;
 import de.overath.cocktailsundco.inventarverwaltung.view.listener.CreateItemListener;
@@ -60,7 +61,7 @@ public class HomePanel extends JPanel implements IInventarverwaltungFrame
 	setLayout(layout);
 	
 	// Button to create new Item
-	JButton createItemButton = InventarverwaltungUtil.createButton("Equipment hinzufügen", new CreateItemListener(mainFrame));
+	JButton createItemButton = InventarverwaltungUtil.createButton("Equipment hinzufï¿½gen", new CreateItemListener(mainFrame));
 	
 	// Button to create new Item
 	JButton showItemButton = InventarverwaltungUtil.createButton("Equipment anzeigen", new ShowItemListener(mainFrame));

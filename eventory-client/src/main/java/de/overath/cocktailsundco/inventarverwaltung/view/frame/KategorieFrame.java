@@ -17,7 +17,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
+
 import de.overath.cocktailsundco.inventarverwaltung.controller.PersistenceController;
 import de.overath.cocktailsundco.inventarverwaltung.model.Kategorie;
 

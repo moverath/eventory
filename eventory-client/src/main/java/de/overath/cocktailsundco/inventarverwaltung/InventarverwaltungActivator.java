@@ -1,12 +1,10 @@
 package de.overath.cocktailsundco.inventarverwaltung;
 
-import java.util.logging.LogManager;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 import de.overath.cocktailsundco.inventarverwaltung.controller.CheckPendingEventsController;
 import de.overath.cocktailsundco.inventarverwaltung.controller.ConnectionController;
@@ -29,20 +27,6 @@ public class InventarverwaltungActivator
 	} catch (Exception e) {
 	    // If Nimbus is not available, you can set the GUI to another look and feel.
 	}
-	
-//	try { 
-//	    UIManager.setLookAndFeel( UIManager.getSystemLookAndFeelClassName() ); 
-//	} catch( Exception e ) { 
-//	    e.printStackTrace(); 
-//	}
-	
-	System.setProperty( "java.util.logging.config.file", "data/logging.properties" );
-	
-	
-	try { LogManager.getLogManager().readConfiguration(); }
-	
-	
-	catch ( Exception e ) { e.printStackTrace(); }
 	
 	try
 	{

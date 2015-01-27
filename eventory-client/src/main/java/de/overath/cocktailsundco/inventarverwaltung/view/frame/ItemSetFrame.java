@@ -34,7 +34,8 @@ import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 import javax.swing.text.NumberFormatter;
 
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
+
 import de.overath.cocktailsundco.inventarverwaltung.controller.LoadDataController;
 import de.overath.cocktailsundco.inventarverwaltung.controller.PersistenceController;
 import de.overath.cocktailsundco.inventarverwaltung.model.Item;
@@ -50,7 +51,7 @@ public class ItemSetFrame extends JFrame implements IInventarverwaltungFrame, Ac
     private static final String TITLE_TEXT = "Equipment set anlegen";
     private static final Dimension MINIMUM_SIZE = new Dimension(400, 525);
     private static final Dimension DEFAULT_SIZE = new Dimension(400, 525);
-    private static final String ADD_ITEM_BUTTON_TEXT = "Equipment hinzufügen";
+    private static final String ADD_ITEM_BUTTON_TEXT = "Equipment hinzufï¿½gen";
     private static final double SIZE_TABLE = 200;
     private static final String DELETE = "Delete";
     private InventarverwaltungMainFrame mainFrame;
@@ -166,7 +167,7 @@ public class ItemSetFrame extends JFrame implements IInventarverwaltungFrame, Ac
 	
 	panel.setLayout(layout);
 	
-	panel.add(new JLabel("Preis [€]:"), "0,0");
+	panel.add(new JLabel("Preis [ï¿½]:"), "0,0");
 	panel.add(getPriceTextField(), "2,0");
 	panel.add(new JLabel("Kategorie:"), "4,0");
 	panel.add(getKategorieComboBox(), "6,0");
@@ -238,7 +239,7 @@ public class ItemSetFrame extends JFrame implements IInventarverwaltungFrame, Ac
 	{
 	    descriptionTextArea = new JTextArea();
 	    descriptionTextArea.setLineWrap(true);
-	    descriptionTextArea.setToolTipText("Beschreibung für das neue EquipmentSet");
+	    descriptionTextArea.setToolTipText("Beschreibung fï¿½r das neue EquipmentSet");
 	}
 	return descriptionTextArea;
     }

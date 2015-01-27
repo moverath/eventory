@@ -25,7 +25,8 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.text.NumberFormatter;
 
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
+
 import de.overath.cocktailsundco.inventarverwaltung.controller.PersistenceController;
 import de.overath.cocktailsundco.inventarverwaltung.model.InventarHasItem;
 import de.overath.cocktailsundco.inventarverwaltung.model.Item;
@@ -165,7 +166,7 @@ public class ItemFrame extends JFrame implements ActionListener, IInventarverwal
 	
 	panel.add(new JLabel(TextConstants.ARTIKELNUMMER), "0,0");
 	panel.add(getArtikelTextField(), "2,0");
-	panel.add(new JLabel("Preis [€]"), "4,0");
+	panel.add(new JLabel("Preis [ï¿½]"), "4,0");
 	panel.add(getPriceTextField(), "6,0");
 	return panel;
     }
