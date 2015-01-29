@@ -31,7 +31,7 @@ public class HomePanel extends JPanel implements IInventarverwaltungFrame
     
     private static final int BUTTON_HEIGHT = 40;
     
-    private static final String COCKTAILS_UND_CO_LOGO_ROT = "img/homePanelLogo.png";
+    private static final String COCKTAILS_UND_CO_LOGO_ROT = "/img/homePanelLogo.png";
     private static final int BUTTON_WIDTH = 215;;
     
     private InventarverwaltungMainFrame mainFrame;
@@ -41,7 +41,7 @@ public class HomePanel extends JPanel implements IInventarverwaltungFrame
     public HomePanel(InventarverwaltungMainFrame mainFrame)
     {
 	try {                
-	          image = ImageIO.read(new File(COCKTAILS_UND_CO_LOGO_ROT));
+	          image = ImageIO.read(getClass().getResource(COCKTAILS_UND_CO_LOGO_ROT));
 	       } catch (IOException ex) {
 		   System.out.println(ex.getStackTrace());
 	       }
