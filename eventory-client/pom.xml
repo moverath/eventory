@@ -21,16 +21,10 @@
     <build>
         <resources>
             <resource>
-                <directory>${eventory.parent.basedir}/src/main/resources</directory>
-                <excludes>
-                    <exclude>**/*.png</exclude>
-                </excludes>
-                <filtering>true</filtering>
-            </resource>
-            <resource>
                 <directory>src/main/resources</directory>
                 <excludes>
                     <exclude>**/*.png</exclude>
+                    <exclude>**/*.sqlite</exclude>
                 </excludes>
                 <filtering>true</filtering>
             </resource>
@@ -38,6 +32,7 @@
                 <directory>src/main/resources</directory>
                 <includes>
                     <include>**/*.png</include>
+                    <include>**/*.sqlite</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>

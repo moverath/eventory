@@ -16,7 +16,7 @@
 			<!-- Common properties -->
 			<property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" />
 			<property name="javax.persistence.jdbc.url"
-					  value="jdbc:sqlite:src/main/resources /db/inventarverwaltung.sqlite" />
+					  value="jdbc:sqlite:src/main/resources/db/inventarverwaltung.sqlite" />
 			<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
 
 			<!-- EclipseLink specific properties -->
