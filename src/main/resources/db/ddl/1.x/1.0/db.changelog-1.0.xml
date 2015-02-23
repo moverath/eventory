@@ -1,0 +1,139 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="1.0_1" author="svesch">
+        <createTable tableName="VERANSTALTUNG_VERANSTALTUNGHASITEMSET">
+            <column name="Veranstaltung_ID" type="NUMBER(19)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="veranstaltungHasItemSet_ID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+        </createTable>
+
+        <createTable tableName="VERANSTALTUNG_VERANSTALTUNGHASITEM">
+            <column name="Veranstaltung_ID" type="NUMBER(19)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="itemSet_VERANSTALTUNGHASITEMID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+        </createTable>
+
+        <createTable tableName="VERANSTALTUNGHASITEMSET">
+            <column name="ID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="ANZAHL" type="NUMBER(12,5)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ITEMSET_ID" type="NUMBER(10)"></column>
+        </createTable>
+
+        <createTable tableName="VERANSTALTUNGHASITEM">
+            <column name="VERANSTALTUNGHASITEMID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="ANZAHL" type="NUMBER(12,5)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ITEMSET_ID" type="NUMBER(10)"></column>
+        </createTable>
+
+        <createTable tableName="VERANSTALTUNG">
+            <column name="ID" type="NUMBER(19)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="ANZAHL" type="NUMBER(12,5)">
+                <constraints nullable="false" />
+            </column>
+            <column name="BESCHREIBUNG" type="VARCHAR"></column>
+            <column name="DATUMBEGINN" type="DATE"></column>
+            <column name="DATUMENDE" type="DATE"></column>
+            <column name="FEEDBACKTEXT" type="VARCHAR"></column>
+            <column name="NAME" type="VARCHAR"></column>
+        </createTable>
+
+        <createTable tableName="SEQUENCE">
+            <column name="SEQ_NAME" type="VARCHAR(50)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="SEQ_COUNT" type="NUMBER(19)"></column>
+        </createTable>
+
+        <createTable tableName="KATEGORIE">
+            <column name="ID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="BESCHREIBUNG" type="VARCHAR"></column>
+            <column name="NAME" type="VARCHAR"></column>
+        </createTable>
+
+        <createTable tableName="Item">
+            <column name="ITEMID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="ARTIKELNUMMER" type="VARCHAR"></column>
+            <column name="BESCHREIBUNG" type="VARCHAR"></column>
+            <column name="BILDKLEIN" type="BLOB"></column>
+            <column name="BILDORIGINAL" type="BLOB"></column>
+            <column name="ISDELETED" type="NUMBER(1)"></column>
+            <column name="ISVERBRAUCHSARTIKEL" type="NUMBER(1)"></column>
+            <column name="NAME" type="VARCHAR"></column>
+            <column name="PREIS" type="NUMBER(12,5)"></column>
+            <column name="KATEGORIE_ID" type="NUMBER(10)"></column>
+        </createTable>
+
+        <createTable tableName="Inventarhasitem">
+            <column name="INVENTARHASITEMID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="ANZAHL" type="NUMBER(12,5)"></column>
+            <column name="ITEM_ITEMID" type="NUMBER(10)"></column>
+        </createTable>
+
+        <createTable tableName="ITEMSETHASITEM">
+            <column name="ID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="ANZAHL" type="NUMBER(12,5)"></column>
+            <column name="ITEM_ITEMID" type="NUMBER(10)"></column>
+            <column name="ITEMSET_ID" type="NUMBER(10)"></column>
+        </createTable>
+
+        <createTable tableName="ITEMSET">
+            <column name="ID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="BESCHREIBUNG" type="VARCHAR"></column>
+            <column name="ISDELETED" type="NUMBER(1)"></column>
+            <column name="NAME" type="VARCHAR"></column>
+            <column name="KATEGORIE_ID" type="NUMBER(10)"></column>
+            <column name="PREIS" type="NUMBER(12,5)"></column>
+        </createTable>
+
+        <createTable tableName="INVENTAR_Inventarhasitem">
+            <column name="Inventar_INVENTARID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="itemSet_INVENTARHASITEMID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+        </createTable>
+
+        <createTable tableName="INVENTAR">
+            <column name="INVENTARID" type="NUMBER(10)">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="NAME" type="VARCHAR"></column>
+        </createTable>
+
+    </changeSet>
+
+    <changeSet id="1.0_2" author="svesch">
+        <tagDatabase tag="1.0" />
+    </changeSet>
+
+
+</databaseChangeLog>
