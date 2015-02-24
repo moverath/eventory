@@ -1,0 +1,13 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="data_1_0" author="svesch">
+        <loadData tableName="SEQUENCE" file="src/main/resources/db/liquibase/data/1.0/csv/sequence.csv" />
+        <loadData tableName="Item" file="src/main/resources/db/liquibase/data/1.0/csv/item.csv" />
+        <loadData tableName="Inventarhasitem" file="src/main/resources/db/liquibase/data/1.0/csv/inventarhasitem.csv" />
+        <loadData tableName="INVENTAR_Inventarhasitem" file="src/main/resources/db/liquibase/data/1.0/csv/inventar_inventarhasitem.csv" />
+        <loadData tableName="INVENTAR" file="src/main/resources/db/liquibase/data/1.0/csv/inventar.csv" />
+    </changeSet>
+
+</databaseChangeLog>

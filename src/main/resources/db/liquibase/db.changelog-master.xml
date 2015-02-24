@@ -6,7 +6,7 @@
         <dbms type="h2" />
     </preConditions>
 
-    <include file="1.x/db.changelog-1.x.xml"
-             relativeToChangelogFile="true" />
+    <include file="ddl/1.0/db.changelog-1.0.xml" relativeToChangelogFile="true" />
+    <include file="data/1.0/db.data-1.0.xml" relativeToChangelogFile="true" />
 
 </databaseChangeLog>
